@@ -18,5 +18,13 @@ body{
   z-index: 1;
 }
 .logo-compania img{
-  width: 300px;
+  width: 250px;
+}
+.bg-banner{
+  background-color: black;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
