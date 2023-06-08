@@ -1,6 +1,7 @@
 import React from 'react';
 import './BannerStyle.css';
 import Formulario from './Formulario'
+import terceraLogo from '../assets/logo_blanco.png'
 
 function Banner() {
   return (
@@ -11,7 +12,7 @@ function Banner() {
         <h1 className='text-light text-center' data-aos="fade-right" data-aos-delay="500">Postula a la Tercera Compañía de Bomberos "José Maria Landeta".</h1>
       </div>
       <div className="container logo-compania position-relative text-center">
-        <img className='' data-aos="fade-left" data-aos-delay="1000" src="/img/logo_blanco.png" alt="" />
+        <img className='' data-aos="fade-left" data-aos-delay="1000" src={terceraLogo} alt="" />
       </div>
       <Formulario/>
     </div>
