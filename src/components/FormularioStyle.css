@@ -9,6 +9,10 @@
         width: 100%;
         padding: 50px;
     }    
+    .formulario-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 #successMessage a{
     background-color: #256D00;

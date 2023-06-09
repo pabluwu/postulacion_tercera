@@ -5,7 +5,7 @@ import terceraLogo from '../assets/logo_blanco.png'
 
 function Banner() {
   return (
-    <div className="container-fluid banner vh-100 position-relative">
+    <div className="container-fluid banner position-relative">
       <div className="bg-banner"></div>
       <div className="background-banner w-100 h-100 position-absolute start-0 top-0"></div>
       <div className="container titulo-banner position-relative">
