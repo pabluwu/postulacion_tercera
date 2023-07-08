@@ -1,0 +1,69 @@
+.button-close-carousel{
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+}
+
+.inner-text{
+    z-index: 1;
+}
+.slick-dots{
+    bottom: 0 !important;
+}
+.slick-slider, .slick-track, .slick-list, .slick-slide div{
+    height: 100% !important;
+    position: relative;
+}
+.box-imagen img{
+    max-height: 100vh;
+}
+.shadow{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content{
+    width: 60% !important;
+    height: 800px;
+    margin: auto;
+}
+.modal.show{
+    margin-top: 100px !important;
+}
+
+@media screen and (min-width: 1280px){
+    .slick-prev::before, .slick-next::before {
+        font-size: 30px !important;
+    }
+    .slick-prev, .slick-next{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .slick-prev {
+        left: -35px !important;
+    }
+    .slick-next {
+        right: -35px !important;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .modal-content{
+        width: 80% !important;
+        height: 300px;
+        margin: auto;
+    }
+    .container-box img{
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover;
+        object-position: center;
+    }
+    .container-box{
+        height: 100%;
+        position: relative;
+    }
+    .button-close-carousel {
+        top: 20px;
+        right: 20px;
+    }
+}
