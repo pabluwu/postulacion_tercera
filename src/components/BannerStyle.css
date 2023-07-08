@@ -5,6 +5,7 @@ body{
 }
 .banner {
   background-image: url('/img/banner.jpeg');
+  background-size: cover;
   backdrop-filter: brightness(.3);  
   padding: 0 !important;
   padding-top: 100px !important;

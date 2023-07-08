@@ -1,6 +1,8 @@
 import React from 'react';
 import './BannerStyle.css';
 import Formulario from './Formulario'
+import Modal from './Modal';
+import ModalRequisitos from './ModalRequisitos';
 import terceraLogo from '../assets/logo_blanco.png'
 
 function Banner() {
@@ -14,7 +16,19 @@ function Banner() {
       <div className="container logo-compania position-relative text-center">
         <img className='' data-aos="fade-left" data-aos-delay="1000" src={terceraLogo} alt="" />
       </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-md-12 ">
+            <Modal/>
+          </div>
+          <div className="col-lg-6 col-md-12 ">
+            <ModalRequisitos/>
+          </div>
+        </div>
+      </div>
+      
       <Formulario/>
+      
     </div>
   );
 }
