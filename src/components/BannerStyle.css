@@ -38,3 +38,9 @@ body{
   bottom: 0;
   left: 0;
 }
+.container-buttons {
+  width: 50%;
+}
+.container-buttons button{
+  height: 70px !important;
+}

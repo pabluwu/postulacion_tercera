@@ -15,13 +15,15 @@ function Banner() {
       <div className="container logo-compania position-relative text-center">
         <img className='' data-aos="fade-left" data-aos-delay="1000" src={terceraLogo} alt="" />
       </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 col-md-12 ">
-            <Modal/>
-          </div>
-          <div className="col-lg-6 col-md-12 ">
-            <ModalRequisitos/>
+      <div className="container-fluid">
+        <div className="container-buttons mx-auto mb-3">
+          <div className="row">
+            <div className="col-lg-6 col-md-12 ">
+              <Modal/>
+            </div>
+            <div className="col-lg-6 col-md-12 ">
+              <ModalRequisitos/>
+            </div>
           </div>
         </div>
       </div>

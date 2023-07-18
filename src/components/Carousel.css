@@ -29,6 +29,13 @@
     margin-top: 100px !important;
 }
 
+@media screen and (max-width: 1440px) {
+    .modal-content{
+        width: 60% !important;
+        height: 500px;
+        margin: auto;
+    }   
+}
 @media screen and (min-width: 1280px){
     .slick-prev::before, .slick-next::before {
         font-size: 30px !important;

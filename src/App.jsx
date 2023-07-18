@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
+<<<<<<<<< Temporary merge branch 1
+=========
+import Banner from './components/Banner'
 import Carousel from './components/Carousel';
 import Requisitos from './components/Requisitos';
+>>>>>>>>> Temporary merge branch 2
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
@@ -12,8 +16,11 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
+
 import Banner from './components/Banner'
 import Footer from './components/Footer'
+import Carousel from './components/Carousel';
+import Requisitos from './components/Requisitos';
 
 
 
@@ -26,6 +33,7 @@ function App() {
     <>
       <Banner/>
       <Footer/>
+=========
       
       <Carousel/>
       <Requisitos/>
@@ -34,3 +42,6 @@ function App() {
 }
 
 export default App
+
+
+
