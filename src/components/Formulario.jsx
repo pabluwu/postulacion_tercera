@@ -1,4 +1,3 @@
-import React from 'react';
 import './FormularioStyle.css';
 
 import axios from 'axios';
