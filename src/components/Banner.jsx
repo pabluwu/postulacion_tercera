@@ -1,4 +1,3 @@
-import React from 'react';
 import './BannerStyle.css';
 import Formulario from './Formulario'
 import Modal from './Modal';

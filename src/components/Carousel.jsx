@@ -28,7 +28,7 @@ function Carousel() {
                     <Slider {...settings}>
                         {images.map((item, index) => (
                             <div className='container-box'>
-                                <img className='w-100 object-fit-cover' src={item} alt="" />
+                                <img className='w-100 h-100 object-fit-cover' src={item} alt="" />
                                 
                             </div>
                         ))}

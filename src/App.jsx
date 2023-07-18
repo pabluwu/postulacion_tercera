@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import Banner from './components/Banner'
 import Carousel from './components/Carousel';
 import Requisitos from './components/Requisitos';
 import './App.css';
@@ -13,6 +12,9 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
+import Banner from './components/Banner'
+import Footer from './components/Footer'
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
   return (
     <>
       <Banner/>
+      <Footer/>
       
       <Carousel/>
       <Requisitos/>
