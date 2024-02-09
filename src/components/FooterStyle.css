@@ -4,3 +4,13 @@
 img{
     max-width:none
 }
+.ul_footer{
+    list-style: none;
+}
+.ul_footer li p{
+    color: #146c43;
+}
+.ul_footer li a, span{
+    color: white;
+    text-decoration: none;
+}

@@ -21,7 +21,7 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 .modal-content{
-    width: 60% !important;
+    width: 60%;
     height: 800px;
     margin: auto;
 }
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 900px){
     .modal-content{
-        width: 80% !important;
+        width: 80%  !important;
         height: 300px;
         margin: auto;
     }

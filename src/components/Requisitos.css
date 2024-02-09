@@ -1,0 +1,11 @@
+
+    
+
+@media screen and (max-width: 1440px){
+
+    .modal-requisitos .modal-content{
+        width: 100%!important;
+        height: 500px;
+        margin: auto;
+    }
+}

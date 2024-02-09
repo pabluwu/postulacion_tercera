@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-<<<<<<<<< Temporary merge branch 1
-=========
-import Banner from './components/Banner'
-import Carousel from './components/Carousel';
-import Requisitos from './components/Requisitos';
->>>>>>>>> Temporary merge branch 2
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
@@ -33,8 +27,6 @@ function App() {
     <>
       <Banner/>
       <Footer/>
-=========
-      
       <Carousel/>
       <Requisitos/>
     </>

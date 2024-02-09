@@ -33,11 +33,14 @@ function Formulario() {
         console.log(email, nombre, apellido);
 
         setLoading(true);
-        axios.post('https://sheet.best/api/sheets/0e3d31a6-1740-416a-bc0a-33330f5621e2', data).then((response) => {
+        axios.post('https://sheet.best/api/sheets/8de22a59-c42a-4d22-90f0-b770253d24ab', data).then((response) => {
             console.log(response);
             setLoading(false);
             setShowSuccess(true);
         });
+        const url = `https://bombalandeta.cl/sender192837/?email=${email}`
+        fetch(url)
+        .then(res => console.log(res))
 
     };
 
