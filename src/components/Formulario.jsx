@@ -28,6 +28,7 @@ function Formulario() {
             Apellidos: apellido,
             Rut: rut,
             Celular: celular,
+            Fecha_Postulacion: (new Date()).toLocaleString()
         }
 
         console.log(email, nombre, apellido);
