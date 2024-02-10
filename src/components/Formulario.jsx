@@ -31,7 +31,7 @@ function Formulario() {
             Nombre: nombre,
             Apellidos: apellido,
             Rut: rut,
-            Celular: celular,
+            Celular: `'${celular}`,
             Fecha_Postulacion: (new Date()).toLocaleString()
         }
 
