@@ -3,6 +3,7 @@ import './FormularioStyle.css';
 import axios from 'axios';
 import { useState } from 'react';
 import { GridLoader } from 'react-spinners';
+import { useMask } from '@react-input/mask';
 
 
 const override = {
@@ -15,6 +16,9 @@ function Formulario() {
     const [apellido, setApellido] = useState('');
     const [rut, setRut] = useState('');
     const [celular, setCelular] = useState('');
+
+    const inputRef = useMask({ mask: '+56 _________', replacement: { _: /\d/ } });
+    const inputRut = useMask({ mask: '__.___.___-_', replacement: { _: /\d/ } });
 
     const [loading, setLoading] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
@@ -70,13 +74,15 @@ function Formulario() {
                         <div className="row mb-3">
                             <div className="col-lg-6 col-md-12 mb-3">
                                 <label htmlFor="exampleRut" className="form-label">Rut</label>
-                                <input type="text" className="form-control" placeholder="20123123-k" aria-label="Rut" required
+                                <input type="text" ref={inputRut} className="form-control" placeholder="20123123-k" aria-label="Rut" required
                                     onChange={(e) => setRut(e.target.value)} value={rut} />
                             </div>
                             <div className="col-lg-6 col-md-12 mb-3">
                                 <label htmlFor="exampleTelefono" className="form-label">Celular</label>
-                                <input type="number" className="form-control" placeholder="912341234" aria-label="Celular" required
+                                <input ref={inputRef} className="form-control" placeholder="912341234" aria-label="Celular" required
                                     onChange={(e) => setCelular(e.target.value)} value={celular} />
+                                {/* <InputMask mask="+0 (___) ___-__-__" replacement={{ _: /\d/ }} type="number" className="form-control" placeholder="912341234" aria-label="Celular" required
+                                    onChange={(e) => setCelular(e.target.value)} value={celular} /> */}
                             </div>
                         </div>
                         <button type="submit" className="btn btn-primary">Postular</button>
