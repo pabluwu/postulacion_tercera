@@ -18,7 +18,7 @@ function Formulario() {
     const [celular, setCelular] = useState('');
 
     const inputRef = useMask({ mask: '+56 _________', replacement: { _: /\d/ } });
-    const inputRut = useMask({ mask: '__.___.___-_', replacement: { _: /\d/ } });
+    const inputRut = useMask({ mask: '__.___.___-D', replacement: { _: /\d/, D:/[0-9k]/ } });
 
     const [loading, setLoading] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
